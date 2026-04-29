@@ -120,3 +120,14 @@ with st.expander("View Statistical Correlation Coefficients"):
         st.write(f"**{modern_season} Correlation (H vs W):** {corr_mod:.3f}")
     else:
         st.write("Insufficient data for correlation calculation.")
+        
+
+# --- FINDINGS SECTION ---
+st.divider()
+st.subheader("Final Findings & Observations")
+
+st.markdown("""
+* **Physical Shift:** NBA players in the modern era are generally leaner than the 1996-1997 season, showing a shift in body composition even if average heights are similar.
+* **Age Maturity:** The average age has changed by **{age_delta:.1f}%**, reflecting shifts in how teams value veteran experience versus young, "one-and-done" talent.
+* **Global Diversity:** By using the country filter, we can observe that the use of international players has significantly impacted the league's physical profile compared to the 1996-97 season.
+""".format(age_delta=age_delta))
